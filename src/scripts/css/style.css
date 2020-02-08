@@ -58,7 +58,6 @@ footer {
   display: grid;
   text-align: center;
   grid-template: auto/ repeat(3, 1fr);
-  /* grid-template-rows: ; */
   padding: 2em;
   margin: 2em;
   grid-template-areas:
