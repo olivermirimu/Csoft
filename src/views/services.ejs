@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css" media="all">
+   <link rel="stylesheet" href="../scripts/css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="js/bootstrap.min.js" async></script>
+   <script src="js/jquery.min.js" async></script>
+   <script src="js/script.js" async></script>
+   <script src="/js/portfolio.js" defer></script>
+   <title>Services</title>
+</head>
+
+<body>
+   <div id="page" class="site">
+      <header id="masthead">
+         <div class="site-identity">
+            <div class="site-title">
+               <h1 id="title"><a href=""> CSOFT </a></h1>
+               <p id="tagline"> </p>
+            </div>
+
+         </div>
+         <div class="navigation" id="main-nav">
+            <nav class="top-nav">
+               <ul class="">
+                  <%for(let i =0; i<nav.length; i+=1) {%>
+                  <li><a href="<%=nav[i].link%>" class="active"><%=nav[i].page%></a></li>
+                  <%}%>
+               </ul>
+            </nav>
+            <div class="dropdown-menu">
+               <button class="dropdown-button"> Menu
+                  <i class="fa fa-carret-down"> </i>
+               </button>
+               <nav class="dropdown-content">
+                  <ul class="">
+                     <li><a href="Home.html" class="active">Home</a></li>
+                     <li><a href="Services.html">Services</a></li>
+                     <li><a href="About.html">About</a></li>
+                     <li><a href="Log_in.html" target="_blank">Log in</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <a href="script.js" class="icon" onclick="menufunction()">&#9776; </a>
+         </div>
+      </header>
+
+      <main id="main-content" class="">
+         <section class="all-services services">
+            <h2 class="services-header">CLICK ON SERVICE TO GET MORE DETAILS</h2>
+            <a href="">
+               <div id="color1" class="single-service">
+                  <span>Business Srategy</span>
+                  <br>
+                  <p>Even all the things that you could use in the world are wonderfully made and awesome if by me</p>
+               </div>
+            </a>
+
+            <a href="">
+               <div id="color2" class="single-service">
+                  <span>Data Science</span>
+                  <br>
+                  <p>Even al the things that you could use in the world are wonderfully made and awesome if by me</p>
+               </div>
+            </a>
+            <a href="">
+               <div id="color2" class="single-service">
+                  <span>Audience Analytics</span>
+                  <br>
+                  <p>Even al the things that you could use in the world are wonderfully made and awesome if by me</p>
+               </div>
+            </a>
+            <a href="">
+               <div id="color1" class="single-service">
+                  <span>Business Srategy</span>
+                  <br>
+                  <p>Even all the things that you could use in the world are wonderfully made and awesome if by me</p>
+               </div>
+            </a>
+            <a href="">
+               <div id="color2" class="single-service">
+                  <span>Data Science</span>
+                  <br>
+                  <p>Even al the things that you could use in the world are wonderfully made and awesome if by me</p>
+               </div>
+            </a>
+            <a href="">
+               <div id="color2" class="single-service">
+                  <span>Audience Analytics</span>
+                  <br>
+                  <p>Even al the things that you could use in the world are wonderfully made and awesome if by me</p>
+               </div>
+            </a>
+         </section>
+         <section class="portfolio">
+            <h2 class="portfolio-header">Our Portfolio</h2>
+            <div class="work-portfolio">
+               <button id="prev"></button>
+               <div class="projects"><img src="Images/limbo.png" />
+                  <h3>Lorem Ipsum</h3>
+               </div>
+               <div class="projects"><img src="Images/limbo.png" />
+                  <h3>Lorem Ipsum</h3>
+               </div>
+               <div class="projects"><img src="Images/limbo.png" />
+                  <h3>Lorem Ipsum</h3>
+               </div>
+               <div class="projects"><img src="Images/limbo.png" />
+                  <h3>Lorem Ipsum</h3>
+               </div>
+               <div class="projects"><img src="Images/limbo.png" />
+                  <h3>Lorem Ipsum</h3>
+               </div>
+               <div class="projects"><img src="Images/limbo.png" />
+                  <h3>Another One</h3>
+               </div>
+               <button id="next"></button>
+            </div>
+            <a href="Portfolio.html"><button id="more">View More</button></a>
+         </section>
+      </main>
+      <footer>
+         <section class="social">
+            <a href="">
+               <div id="facebook" class="fa fa-facebook"><small>Facebook</small></div>
+            </a>
+            <a href="">
+               <div id="twitter" class="fa fa-twitter"><small>Twitter</small></div>
+            </a>
+            <a href="">
+               <div id="instagram" class="fa fa-instagram"><small>Instagram</small>
+               </div>
+            </a>
+            <a href="">
+               <div id="pinterest" class="fa fa-pinterest"><small>Pinterest</small>
+               </div>
+            </a>
+         </section>
+         <small>&copy;CSOFT <script>
+               document.write(new Date().getFullYear());
+            </script></small>
+      </footer>
+   </div>
+</body>
+
+</html>
