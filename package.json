@@ -5,13 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
+<<<<<<< HEAD
     "start": "nodemon server/server.js",
     "api": "nodemon api/api.js"
+=======
+    "start": "node server/server.js"
+>>>>>>> 88420c06f34b3e345c93c0eb47b201d59c585398
   },
   "author": "Nico",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+<<<<<<< HEAD
     "bootstrap": "^4.4.1",
     "chalk": "^3.0.0",
     "debug": "^4.1.1",
@@ -26,3 +31,13 @@
     "passport": "^0.4.1"
   }
 }
+=======
+    "chalk": "^3.0.0",
+    "debug": "^4.1.1",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  }
+}
+>>>>>>> 88420c06f34b3e345c93c0eb47b201d59c585398

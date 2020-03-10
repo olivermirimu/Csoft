@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const resourcesToCache = [
   '/',
   '/style.css',
@@ -44,3 +45,6 @@ self.addEventListener('push', event => {
     tag: tag
   }));
 });
+=======
+console.log('We up!');
+>>>>>>> 88420c06f34b3e345c93c0eb47b201d59c585398
