@@ -31,7 +31,6 @@ function csoftRoutes() {
     csoftRouter.route('/logIn').get((req, res) => {
         res.render('logIn', nav);
     });
-
     return csoftRouter;
 }
 

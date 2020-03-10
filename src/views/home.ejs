@@ -17,16 +17,6 @@
    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
    <meta name="msapplication-TileColor" content="#2d89ef">
    <meta name="theme-color" content="#F36E1F">   
-   <!-- temporary fix references    
-   <link rel="stylesheet" href="/bootstrap.min.css" type="text/css">
-   <link rel="stylesheet" href="../scripts/css/style.css">
-   <script src="/script.js" defer></script>
-   <script src="/homeSlider.js" defer></script>
-   <script src="/bootstrap.min.js" async></script>
-   <script src="/jquery.min.js" async></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    *********** -->
-   
    <script src="/script.js" async></script>
    <script src="/homeSlider.js" defer></script>
 
@@ -58,10 +48,14 @@
                </button>
                <nav class="dropdown-content">
                   <ul class="">
-                     <li><a href="Home.html" class="active">Home</a></li>
-                     <li><a href="Services.html">Services</a></li>
+                  <%for(item of nav){%>
+                     <li><a href="<%=%>" class="active">Home</a></li>
+                  <%}%>
+                     
+                     <!--<li><a href="Services.html">Services</a></li>
                      <li><a href="About.html">About</a></li>
                      <li><a href="Log_in.html" target="_blank">Log in</a></li>
+                     -->
                   </ul>
                </nav>
             </div>

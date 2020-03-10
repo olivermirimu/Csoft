@@ -11,6 +11,19 @@ var path = require('path');
 const csoftRouter = express.Router();
 
 //app variables and constants
+const nav = [{
+  page: 'Home',
+  link: '/home'
+}, {
+  page: 'Services',
+  link: '/services'
+}, {
+  page: 'About',
+  link: '/about'
+}, {
+  page: 'Login',
+  link: '/login'
+}];
 var app = express();
 var port = 4000 || process.env.PORT;
 
@@ -41,9 +54,6 @@ csoftRouter.route('/signUp').get((req, res) => {
 csoftRouter.route('/logIn').get((req, res) => {
   res.render('logIn', nav);
 });
-// csoftRouter.route('/home2').get((req, res) => {
-//   res.sendFile('home.html');
-// });
 app.get('/', (req, res) => {
   res.render('home');
 });
