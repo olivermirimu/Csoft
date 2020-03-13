@@ -29,8 +29,8 @@
          <div class="navigation" id="main-nav">
             <nav class="top-nav">
                <ul class="">
-                  <%for(let i =0; i<nav.length; i+=1) {%>
-                  <li><a href="<%=nav[i].link%>" class="active"><%=nav[i].page%></a></li>
+                  <%for(item of nav){%>
+                     <li><a href="<%=item.link%>" class=""><%=item.page%></a></li>
                   <%}%>
                </ul>
             </nav>
@@ -40,14 +40,13 @@
                </button>
                <nav class="dropdown-content">
                   <ul class="">
-                     <li><a href="Home.html" class="active">Home</a></li>
-                     <li><a href="Services.html">Services</a></li>
-                     <li><a href="About.html">About</a></li>
-                     <li><a href="Log_in.html" target="_blank">Log in</a></li>
+                  <%for(item of nav){%>
+                     <li><a href="<%=item.link%>" class=""><%=item.page%></a></li>
+                  <%}%>
                   </ul>
                </nav>
             </div>
-            <a href="script.js" class="icon" onclick="menufunction()">&#9776; </a>
+            <a href="javascript:void(0);" class="icon" onclick="menufunction()">&#9776; </a>
          </div>
       </header>
 
@@ -102,22 +101,22 @@
             <h2 class="portfolio-header">Our Portfolio</h2>
             <div class="work-portfolio">
                <button id="prev"></button>
-               <div class="projects"><img src="Images/limbo.png" />
+               <div class="projects"><img src="/home2.png" />
                   <h3>Lorem Ipsum</h3>
                </div>
-               <div class="projects"><img src="Images/limbo.png" />
+               <div class="projects"><img src="/home2.png" />
                   <h3>Lorem Ipsum</h3>
                </div>
-               <div class="projects"><img src="Images/limbo.png" />
+               <div class="projects"><img src="/home2.png" />
                   <h3>Lorem Ipsum</h3>
                </div>
-               <div class="projects"><img src="Images/limbo.png" />
+               <div class="projects"><img src="/home2.png" />
                   <h3>Lorem Ipsum</h3>
                </div>
-               <div class="projects"><img src="Images/limbo.png" />
+               <div class="projects"><img src="/home2.png" />
                   <h3>Lorem Ipsum</h3>
                </div>
-               <div class="projects"><img src="Images/limbo.png" />
+               <div class="projects"><img src="/home2.png" />
                   <h3>Another One</h3>
                </div>
                <button id="next"></button>

@@ -5,12 +5,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <link rel="stylesheet" href="/css/bootstrap.min.css">
-   <link rel="stylesheet" href="/css/style.css" media="all">
-   <link rel="stylesheet" href="../scripts/css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src="/js/bootstrap.min.js" async></script>
-   <script src="/js/jquery.min.js" async></script>
+   <link rel="stylesheet" href="/style.css" media="all">
    <script src="/js/script.js" async></script>
    <title>Client Registration</title>
 </head>
@@ -28,12 +23,9 @@
          <div class="navigation" id="main-nav">
             <nav class="top-nav">
                <ul class="">
-                  <li><a href="Home.html" class="active">Home</a></li>
-                  <li><a href="Services.html">Services</a></li>
-                  <li><a href="About.html">About</a></li>
-                  <li><a href="Portfolio.html">Portfolio</a></li>
-                  <li><a href="Contact.html">Contact</a></li>
-                  <li><a href="Log_in.html" target="_blank">Log in</a></li>
+                  <%for(item of nav){%>
+                     <li><a href="<%=item.link%>" class=""><%=item.page%></a></li>
+                  <%}%>
                </ul>
             </nav>
             <div class="dropdown-menu">
@@ -42,10 +34,9 @@
                </button>
                <nav class="dropdown-content">
                   <ul class="">
-                     <li><a href="Home.html" class="active">Home</a></li>
-                     <li><a href="Services.html">Services</a></li>
-                     <li><a href="About.html">About</a></li>
-                     <li><a href="Log_in.html" target="_blank">Log in</a></li>
+                  <%for(item of nav){%>
+                     <li><a href="<%=item.link%>" class=""><%=item.page%></a></li>
+                  <%}%>
                   </ul>
                </nav>
             </div>

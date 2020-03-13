@@ -5,13 +5,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/style.css" media="all">
-   <link rel="stylesheet" href="../scripts/css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src="js/bootstrap.min.js" async></script>
-   <script src="js/jquery.min.js" async></script>
-   <script src="js/script.js" async></script>
+   <link rel="stylesheet" href="/style.css" media="all">
    <title>Log in or Sign up</title>
 </head>
 
@@ -27,23 +21,24 @@
          <div class="navigation" id="main-nav">
             <nav class="top-nav">
                <ul class="">
-                  <li><a href="Home.html" class="active">Home</a></li>
-                  <li><a href="Services.html">Services</a></li>
-                  <li><a href="About.html">About</a></li>
-                  <li><a href="Log_in.html" target="_blank">Log in</a></li>
+                  <%for(item of nav){%>
+                     <li><a href="<%=item.link%>" class=""><%=item.page%></a></li>
+                  <%}%>
                </ul>
             </nav>
             <div class="dropdown-menu">
-               <button class="dropdown-button">Menu</button>
+               <button class="dropdown-button"> Menu
+                  <i class="fa fa-carret-down"> </i>
+               </button>
                <nav class="dropdown-content">
                   <ul class="">
-                     <li><a href="Home.html">Home</a></li>
-                     <li><a href="Services.html">Services</a></li>
-                     <li><a href="About.html">About</a></li>
-                     <li><a href="Log_in.html" target="_blank">Log in</a></li>
+                  <%for(item of nav){%>
+                     <li><a href="<%=item.link%>" class=""><%=item.page%></a></li>
+                  <%}%>
                   </ul>
                </nav>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="menufunction()">&#9776; </a>
          </div>
       </header>
 
@@ -61,7 +56,7 @@
                <input type="password" name="password" />
                <br><br>
                <input id="logbt" type="submit" value="Log in" class="btn" />
-               <input id="registerbt" type="submit" value="Register" class="btn" />
+               <a  href="/signUp"><input id="registerbt" type="button" value="Register" class="btn"/></a>
                <br><br>
                <a href=""><small>Forgot password?</small></a>
             </form>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const resourcesToCache = [
   '/',
   '/style.css',
@@ -30,7 +29,7 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   event.respondWith(caches.match(event.request).then(cachedResponse => {
-    return cachedResponse || fetch(event.request);
+    return fetch(event.request) || cachedResponse;
   }));
 });
 
@@ -45,6 +44,3 @@ self.addEventListener('push', event => {
     tag: tag
   }));
 });
-=======
-console.log('We up!');
->>>>>>> 88420c06f34b3e345c93c0eb47b201d59c585398

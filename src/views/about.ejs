@@ -30,10 +30,9 @@
          <div class="navigation" id="main-nav">
             <nav class="top-nav">
                <ul class="">
-                  <li><a href="Home.html" class="active">Home</a></li>
-                  <li><a href="Services.html">Services</a></li>
-                  <li><a href="About.html">About</a></li>
-                  <li><a href="Log_in.html" target="_blank">Log in</a></li>
+                  <%for(item of nav){%>
+                     <li><a href="<%=item.link%>" class=""><%=item.page%></a></li>
+                  <%}%>
                </ul>
             </nav>
             <div class="dropdown-menu">
@@ -42,10 +41,9 @@
                </button>
                <nav class="dropdown-content">
                   <ul class="">
-                     <li><a href="Home.html" class="active">Home</a></li>
-                     <li><a href="Services.html">Services</a></li>
-                     <li><a href="About.html">About</a></li>
-                     <li><a href="Log_in.html" target="_blank">Log in</a></li>
+                  <%for(item of nav){%>
+                     <li><a href="<%=item.link%>" class=""><%=item.page%></a></li>
+                  <%}%>
                   </ul>
                </nav>
             </div>
@@ -72,7 +70,7 @@
             <div class="management">
                <!-- <button id="prev"></button> -->
                <a href="">
-                  <div class="heads"><img src="Images/limbo.png" />
+                  <div class="heads"><img src="maleTemplate.png" />
                      <h3>Chief Executive Officer(CEO)</h3>
                      <div class="headBio hide">
                         <p></p>
@@ -80,7 +78,7 @@
                   </div>
                </a>
                <a href="">
-                  <div class="heads"><img src="Images/limbo.png" />
+                  <div class="heads"><img src="maleTemplate.png" />
                      <h3>Chief Executive Officer(CEO)</h3>
                      <div class="headBio hide">
                         <p></p>
@@ -88,7 +86,7 @@
                   </div>
                </a>
                <a href="">
-                  <div class="heads"><img src="Images/limbo.png" />
+                  <div class="heads"><img src="maleTemplate.png" />
                      <h3>Chief Executive Officer(CEO)</h3>
                      <div class="headBio hide">
                         <p></p>
@@ -96,7 +94,7 @@
                   </div>
                </a>
                <a href="">
-                  <div class="heads"><img src="Images/limbo.png" />
+                  <div class="heads"><img src="maleTemplate.png" />
                      <h3>Chief Executive Officer(CEO)</h3>
                      <div class="headBio hide">
                         <p></p>

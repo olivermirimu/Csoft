@@ -28,10 +28,9 @@
          <div class="navigation" id="main-nav">
             <nav class="top-nav">
                <ul class="">
-                  <li><a href="Home.html" class="active">Home</a></li>
-                  <li><a href="Services.html">Services</a></li>
-                  <li><a href="About.html">About</a></li>
-                  <li><a href="Log_in.html" target="_blank">Log in</a></li>
+                  <%for(item of nav){%>
+                     <li><a href="<%=item.link%>" class=""><%=item.page%></a></li>
+                  <%}%>
                </ul>
             </nav>
             <div class="dropdown-menu">
@@ -40,10 +39,9 @@
                </button>
                <nav class="dropdown-content">
                   <ul class="">
-                     <li><a href="Home.html" class="active">Home</a></li>
-                     <li><a href="Services.html">Services</a></li>
-                     <li><a href="About.html">About</a></li>
-                     <li><a href="Log_in.html" target="_blank">Log in</a></li>
+                  <%for(item of nav){%>
+                     <li><a href="<%=item.link%>" class=""><%=item.page%></a></li>
+                  <%}%>
                   </ul>
                </nav>
             </div>
