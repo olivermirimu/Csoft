@@ -4,7 +4,7 @@ body {
 
 .site {
   margin: 5em;
-  padding: 1em;
+  padding: 1em 3rem;
   background-color: ghostwhite;
   border-radius: 2em;
 }
@@ -45,24 +45,30 @@ footer {
 }
 
 #slider {
-  width: 34em;
-  height: 16em;
+  margin-top: 2rem;
+  width: 30rem;
+  height: 13em;
   margin: 1em;
 }
 
 .services,
-.management {
+.portfolio,
+.forms {
   background-color: aliceblue;
   border-radius: 2em;
-  display: grid;
+  display: block;
   text-align: center;
-  grid-template: auto/ repeat(3, 1fr);
-  padding: 2em;
-  margin: 2em;
-  grid-template-areas:
-    "h h h"
-    "c c c"
-    "m m m";
+  padding: .5em;
+  margin: .5em;
+}
+
+.services-container,
+.portfolio-container {
+  display: flex;
+  flex-flow: row;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .services-header,
@@ -81,6 +87,8 @@ footer {
   border-bottom-right-radius: 1em;
   padding: 1em;
   margin: 1em;
+  min-width: 10rem;
+  max-width: 12rem;
 }
 
 .services a {
@@ -95,6 +103,29 @@ footer {
   background-color: antiquewhite;
 }
 
+.projects {
+  min-width: 10rem;
+  max-width: 12rem;
+  margin: 1em 0;
+  box-sizing: border-box;
+}
+
+.projects p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: .4rem;
+  font-weight: 500;
+  color: #3f3f3f;
+}
+
+.projects img {
+  height: 7rem;
+  width: auto;
+  margin: .5rem 0;
+  box-sizing: border-box;
+}
+
+/* about page */
 .heads {
   margin: 0.5em;
   padding: 0.5em;
@@ -105,10 +136,21 @@ footer {
 
 .management {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  background-color: aliceblue;
+  border-radius: 2em;
+  display: grid;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
 }
 
 .management a {
   text-decoration: none;
+}
+
+.management img {
+  margin: 0.5em;
+  max-width: 100%;
 }
 
 .form-page {
@@ -118,16 +160,14 @@ footer {
   align-content: center;
 }
 
-.forms {
-  padding: 1em 4em;
-  background-color: aliceblue;
-  border-radius: 2em;
+.forms textarea {
+  resize: none;
+  font-family: inherit;
 }
 
-.forms input,
-.forms textarea {
-  margin: 0.3em;
-  border-radius: 0.3em;
+.data-entry {
+  margin: 0 auto;
+  padding: .4rem;
 }
 
 .btn {
@@ -156,8 +196,9 @@ footer {
 }
 
 .work-portfolo {
+  box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 00px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
 }
 
 @media(max-width:992px) {
@@ -171,24 +212,24 @@ footer {
     grid-template-columns: 1fr 2fr;
   }
 
-  .services,
+  /* .services,
   .portfolio {
     grid-template: auto / repeat(2, 1fr);
     margin: 1em;
-  }
+  } */
 
 }
 
 @media(max-width:768px) {
   .site {
-    margin: 4em;
+    margin: 4em 2em;
   }
 
-  .services,
+  /* .services,
   .portfolio {
     padding: 1em;
     margin: 1em;
-  }
+  } */
 
   #slider {
     width: 100%;
@@ -203,15 +244,55 @@ footer {
 
 @media(max-width:580px) {
   .site {
-    margin: 2em;
+    margin: 1em;
   }
 
   #slider {
     height: 10em;
   }
 
-  .services,
+  /* .services,
   .portfolio {
     grid-template: auto/ repeat(1, 1fr);
-  }
+  } */
+}
+
+/* font-awesome */
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+/* generic styles */
+.form-control {
+  display: block;
+  width: auto;
+  /* width: 100%; */
+  /* height: calc(1.5em + .75rem + 2px); */
+  padding: .375rem .75rem;
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-group {
+  margin-top: 1rem;
 }
