@@ -1,4 +1,4 @@
-const images = ["breakout-area.jpg", "meeting.png", "YinYang.jpg"];
+const images = ["breakout-area.jpg", "meeting.jpg", "YinYang.jpg"];
 let slider = document.getElementById("slider");
 
 let i = 0;
