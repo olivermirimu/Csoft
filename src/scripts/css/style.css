@@ -12,6 +12,13 @@ body {
 .site-title {
   text-align: center;
 }
+.site-title > #tagline{
+ color: #6a6a6a;
+ margin: .5rem 0;
+}
+.site-title > #title{
+  margin: .5rem 0;
+}
 
 .site-title a {
   text-decoration: none;
@@ -46,6 +53,7 @@ footer {
 
 #slider {
   margin-top: 2rem;
+  padding-top: 2rem;
   width: 30rem;
   height: 13em;
   margin: 1em;
@@ -181,13 +189,15 @@ footer {
   text-align: center;
   overflow: hidden;
 }
-
+.top-nav > ul {
+  margin: 0;
+}
 .navigation li,
 .navigation a {
 
   display: inline-block;
   color: black;
-  margin: 10px 10px 0 0;
+  margin: 5px 5px 0 0;
   text-decoration: none;
 }
 
@@ -200,7 +210,9 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
 }
-
+.active-nav-link{
+  color: #541a8b !important;
+}
 @media(max-width:992px) {
 
   #slider {
@@ -295,4 +307,7 @@ footer {
 
 .form-group {
   margin-top: 1rem;
+}
+.navigation> a .icon{
+  display:none;
 }

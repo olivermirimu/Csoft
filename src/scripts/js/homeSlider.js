@@ -1,9 +1,9 @@
 const images = [
-  '../assets/images/breakout-area.jpg',
-  '../assets/images/depresed.jpg',
-  '../assets/images/limbo.png'
+  "images/breakout-area.jpg",
+  "images/random.jpg",
+  "images/YinYang.jpg",
 ];
-let slider = document.getElementById('slider');
+let slider = document.getElementById("slider");
 
 let i = 0;
 setInterval(() => {
@@ -12,4 +12,4 @@ setInterval(() => {
     i = 0;
   }
   slider.src = images[i];
-}, 1000);
+}, 3000);
