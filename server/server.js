@@ -25,7 +25,7 @@ const nav = [{
   link: '/login'
 }];
 var app = express();
-var port = 4000 || process.env.PORT;
+var port = process.env.PORT || 4000 ;
 
 app.use(morgan('tiny'));
 app.use(express.static(path.join(__dirname, '../src')));
