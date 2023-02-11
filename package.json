@@ -22,7 +22,7 @@
     "localtunnel": "^2.0.0",
     "mongoose": "^5.11.8",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.6",
+    "nodemon": "^2.0.20",
     "passport": "^0.4.1"
   },"engines": {
     "node": "12.x"
